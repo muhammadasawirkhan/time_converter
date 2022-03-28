@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>JS daily problems</title>
+	<meta name="viewport"content="width=device-width,initial-scale=1.0">
+</head>
+<body>
+	<input type="number" id="minutesInput"placeholder="please insert minutes"/>
+	<button type="submit"onclick="ConvertSec();"id="#minutesConvert">Convert</button>
+	<div class="result"></div>
+
+	<script>
+		function ConvertSec()
+		{
+			let minutes=document.querySelector('#minutesInput').value;
+			let convertMin=document.querySelector('#minutesConvert');
+			let result=document.querySelector('.result');
+			let mintoSec="";
+			mintoSec=minutes*60;
+			result.textContent=mintoSec;
+		}
+
+	</script>
+
+</body>
+</html>
